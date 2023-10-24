@@ -1,1 +1,1 @@
-# creativity-experiments
+# Creativity-Experiments
