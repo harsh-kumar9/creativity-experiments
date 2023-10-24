@@ -10,7 +10,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Refine />} />
+          <Route path="/" element={<Controls />} />
+          <Route path="/absent" element={<Absent />} />
+          <Route path="/generate" element={<Generate />} />
+          <Route path="/refine" element={<Refine />} />
         </Routes>
       </Router>
     </div>
