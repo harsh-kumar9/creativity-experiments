@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { prompts } from "./Prompts";
 
 let nextId = 0;
 
@@ -27,28 +28,28 @@ const Absent = () => {
                     <h1 className="mt-4">Item</h1>
                 </div>
 
-                <div className="w-1/3">
-                    <h2 className="mb-4">Enter Alternative Uses below</h2>
+                <div className="w-1/2">
+                    <h2 className="mb-4 text-3xl">Enter Alternative Uses below</h2>
 
                     <div className="flex flex-row space-x-4 justify-between">
-                        <input className="w-max p-2 rounded-md" 
+                        <input className="grow p-2 rounded-md text-2xl" 
                             value={input}
                             onChange={e => setInput(e.target.value)}/>
-                        <button className="outline outline-offset-2 outline-2 rounded-md text-xl px-2"
+                        <button className="outline outline-offset-2 outline-3 rounded-md font-bold text-xl px-2 hover:bg-orange-500"
                             onClick={() => { 
                                 setIdeas([
                                   ...ideas,
                                   { id: nextId++, name: input }
                                 ]);
                                 setInput('');
-                              }}>Submit</button>
+                              }}>SUBMIT</button>
                     </div>
                     
                     <div className="h-3/4 bg-orange-500 mt-4 rounded-lg p-4 grid place-items-start">
                     <ul className="object-left flex flex-wrap">
                         {ideas.map(idea => (
-                        <li key={idea.id} className="text-left flex justify-between">
-                            <span>{`\u2022 ${idea.name}`}{' '}</span>
+                        <li key={idea.id} className="text-left text-xl flex justify-between">
+                            <span>{`\u2022 ${idea.name}`}</span>
                             <button onClick={() => {
                                 setIdeas(
                                     ideas.filter(a =>

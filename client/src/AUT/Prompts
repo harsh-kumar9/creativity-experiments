@@ -1,0 +1,35 @@
+// import images from assets folder
+import cardboardbox from './assets/cardboardbox.webp';
+
+export const prompts = [
+    {
+        id: "Cardboard Box",
+        img: "cardboardbox",
+    },
+    {
+        id: "Flaslight",
+        img: "image",
+    },
+    {
+        id: "Wooden Ruler",
+        img: "image",
+    },
+    {
+        id: "Rope",
+        img: "image",
+    },
+    {
+        id: "Pencil",
+        img: "image",
+    },
+    {
+        id: "Candle",
+        img: "image",
+    },
+    {
+        id: "",
+        img: "",
+    },
+];
+
+export { prompts };
