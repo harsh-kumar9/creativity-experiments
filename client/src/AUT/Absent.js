@@ -17,8 +17,8 @@ const Absent = () => {
   // }
 
   return (
-    <div className="h-screen w-screen items-center justify-center flex text-3xl font-semibold space-y-8 p-14 bg-amber-400">
-      <div className="flex flex-col h-full w-full items-center justify-center bg-amber-500 rounded-[60px]">
+    <div className="h-screen w-screen items-center justify-center flex text-3xl font-semibold space-y-8 p-14 bg-purple-one">
+      <div className="flex flex-col h-full w-full items-center justify-center bg-purple-two rounded-[60px]">
         <text className="text-2xl">
           For the following objects, come up with alternative uses that are
           different from it's typical intended use.
@@ -29,14 +29,14 @@ const Absent = () => {
         </text>
         
         <div className="flex flex-row w-full justify-evenly">
-            <div className="w-1/3">
-                <div className="w-full rounded-[60px] bg-orange-500 flex justify-center items-center p-8">
+            <div className="w-1/3 flex flex-col justify-center">
+                <div className="w-full rounded-[60px] bg-purple-three flex justify-center items-center p-8">
                 <img
                     className="object-contain rounded-[60px]"
                     src={prompts["Cardboard Box"]}
                 />
                 </div>
-                <h1 className="mt-4">{Object.keys(prompts)[0]}</h1>
+                <h1 className="mt-4 text-center">{Object.keys(prompts)[0]}</h1>
             </div>
 
           <div className="w-1/2">
@@ -49,7 +49,7 @@ const Absent = () => {
                 onChange={(e) => setInput(e.target.value)}
               />
               <button
-                className="outline outline-offset-2 outline-3 rounded-md font-bold text-xl px-2 hover:bg-orange-500"
+                className="outline outline-offset-2 outline-3 rounded-md font-bold text-xl px-2 hover:bg-purple-three"
                 onClick={() => {
                   setIdeas([...ideas, { id: nextId++, name: input }]);
                   setInput("");
@@ -59,7 +59,7 @@ const Absent = () => {
               </button>
             </div>
 
-            <div className="h-3/4 bg-orange-500 mt-4 rounded-lg p-4 grid place-items-start">
+            <div className="h-3/4 bg-purple-three mt-4 rounded-lg p-4 grid place-items-start">
               <ul className="object-left flex flex-wrap">
                 {ideas.map((idea) => (
                   <li
