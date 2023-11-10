@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/creativity-experiments/static/css/main.32f748f0.css",
-    "main.js": "/creativity-experiments/static/js/main.06d18c91.js",
+    "main.css": "/creativity-experiments/static/css/main.8ca91b50.css",
+    "main.js": "/creativity-experiments/static/js/main.dfccbb06.js",
     "static/js/787.c4e7f8f9.chunk.js": "/creativity-experiments/static/js/787.c4e7f8f9.chunk.js",
     "static/media/cardboardbox.jpg": "/creativity-experiments/static/media/cardboardbox.541545bd9e95e447d4ff.jpg",
     "index.html": "/creativity-experiments/index.html",
-    "main.32f748f0.css.map": "/creativity-experiments/static/css/main.32f748f0.css.map",
-    "main.06d18c91.js.map": "/creativity-experiments/static/js/main.06d18c91.js.map",
+    "main.8ca91b50.css.map": "/creativity-experiments/static/css/main.8ca91b50.css.map",
+    "main.dfccbb06.js.map": "/creativity-experiments/static/js/main.dfccbb06.js.map",
     "787.c4e7f8f9.chunk.js.map": "/creativity-experiments/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32f748f0.css",
-    "static/js/main.06d18c91.js"
+    "static/css/main.8ca91b50.css",
+    "static/js/main.dfccbb06.js"
   ]
 }
